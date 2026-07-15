@@ -9,7 +9,7 @@
     "subtitle": "코스피·코스닥 + 한국 섹터 ETF · 50일 이격도 기반 (이그전 해석법)",
     "index_heading": "한국 주요 지수 (코스피·코스닥)"
   },
-  "updated_at": "2026-07-16T00:32:33+09:00",
+  "updated_at": "2026-07-16T02:48:46+09:00",
   "as_of_date": "2026-07-15",
   "ma_period": 50,
   "ma_periods": [
@@ -239,33 +239,6 @@
       },
       "as_of_date": "2026-07-15",
       "rank": 6
-    },
-    {
-      "ticker": "307520",
-      "symbol": "307520.KS",
-      "kind": "sector",
-      "name_ko": "지주사",
-      "name_en": "Holding Companies",
-      "theme": "TIGER 지주회사",
-      "price": 20915.0,
-      "ma10": 21474.5,
-      "ma20": 22447.5,
-      "ma100": 22645.4,
-      "disparity": 92.36,
-      "zone": "cooldown",
-      "market": {
-        "state": "bear",
-        "label": "하락장",
-        "score": -100.0,
-        "cross": false,
-        "up10": false,
-        "up20": false,
-        "spread_pct": -4.33,
-        "slope10_pct": -5.21,
-        "slope20_pct": -4.33
-      },
-      "as_of_date": "2026-07-15",
-      "rank": 8
     },
     {
       "ticker": "139250",
