@@ -36,6 +36,7 @@ MARKETS = {
     "us": {
         "market_id": "us",
         "out_dir": DATA / "us",
+        "ma_period": 100,                # 미국: 100일 이격도
         "auto_adjust": True,
         "positive_only": False,
         "currency": {"symbol": "$", "decimals": 2},
@@ -49,13 +50,14 @@ MARKETS = {
     "kr": {
         "market_id": "kr",
         "out_dir": DATA / "kr",
+        "ma_period": 50,                 # 한국: 50일 이격도 (원래 기준으로 복원)
         "auto_adjust": False,
         "positive_only": True,
         "currency": {"symbol": "₩", "decimals": 0},
         "universe": {"kind": "file", "path": DATA / "kr" / "sectors.json"},
         "labels": {
             "site_title": "한국 섹터 ETF 이격도 트래커",
-            "subtitle": "코스피·코스닥 + 한국 섹터 ETF · 100일 이격도 기반 (이그전 해석법)",
+            "subtitle": "코스피·코스닥 + 한국 섹터 ETF · 50일 이격도 기반 (이그전 해석법)",
             "index_heading": "한국 주요 지수 (코스피·코스닥)",
         },
     },

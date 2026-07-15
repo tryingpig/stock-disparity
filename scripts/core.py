@@ -19,10 +19,10 @@ import pandas as pd
 import yfinance as yf
 
 # ── 공통 설정 ─────────────────────────────────────────────────────────
-MA_SHORT = 10           # 단기 이동평균 (상승장 판정용)
-MA_MID = 20             # 중기 이동평균 (상승장 판정용)
-MA_PERIOD = 100         # 이격도 기준 이동평균
+MA_SHORT = 10           # 단기 이동평균 (상승장 판정용, 전 시장 공통)
+MA_MID = 20             # 중기 이동평균 (상승장 판정용, 전 시장 공통)
 MA_SLOPE_LOOKBACK = 5   # 이평선 기울기 판정 기준(거래일)
+# 이격도 기준 이동평균 기간은 시장별로 다르다(markets.py: US=100 / KR=50) → run_market 인자로 받는다.
 HISTORY_PERIOD = "6y"   # 수집 범위 (5Y 토글 + MA100 워밍업 여유)
 SERIES_KEEP_DAYS = 1300 # {티커}.json 보관 최근 거래일 수 (약 5년)
 
@@ -68,16 +68,19 @@ def fetch_history(ticker: str, *, auto_adjust: bool, positive_only: bool = False
     raise RuntimeError(f"{ticker} 수집 실패: {last_err}")
 
 
-def compute_series(df: pd.DataFrame) -> pd.DataFrame:
-    """종가에서 MA10/20/100과 이격도를 계산한 시계열 DataFrame을 만든다."""
+def compute_series(df: pd.DataFrame, ma_period: int) -> pd.DataFrame:
+    """종가에서 MA10/20 + 기준 이동평균(ma_period)과 이격도를 계산한다.
+
+    'ma' 컬럼 = 이격도 기준 이동평균(기간중립 키). 이격도 = 종가/ma*100.
+    """
     out = pd.DataFrame(index=df.index)
     close = df["Close"]
     out["price"] = close.round(2)
     out["ma10"] = close.rolling(window=MA_SHORT, min_periods=MA_SHORT).mean().round(2)
     out["ma20"] = close.rolling(window=MA_MID, min_periods=MA_MID).mean().round(2)
-    out["ma100"] = close.rolling(window=MA_PERIOD, min_periods=MA_PERIOD).mean().round(2)
-    out["disparity"] = (close / out["ma100"] * 100).round(2)
-    out = out.dropna(subset=["ma100", "disparity"])
+    out["ma"] = close.rolling(window=ma_period, min_periods=ma_period).mean().round(2)
+    out["disparity"] = (close / out["ma"] * 100).round(2)
+    out = out.dropna(subset=["ma", "disparity"])
     return out
 
 
@@ -119,15 +122,15 @@ def classify_market(series: pd.DataFrame, lookback: int = MA_SLOPE_LOOKBACK) -> 
 
 
 def process_entry(meta: dict, kind: str, out_dir: Path, *,
-                  auto_adjust: bool, positive_only: bool) -> dict:
+                  auto_adjust: bool, positive_only: bool, ma_period: int) -> dict:
     """티커 하나를 수집·계산하고 out_dir/{slug}.json을 쓴 뒤 summary 스냅샷을 반환."""
     symbol = meta["ticker"]
     file_id = meta.get("slug", symbol)
 
     df = fetch_history(symbol, auto_adjust=auto_adjust, positive_only=positive_only)
-    series = compute_series(df)
+    series = compute_series(df, ma_period)
     if series.empty:
-        raise RuntimeError("MA100 계산 가능한 데이터 부족")
+        raise RuntimeError(f"MA{ma_period} 계산 가능한 데이터 부족")
 
     last = series.iloc[-1]
     as_of_date = series.index[-1].strftime("%Y-%m-%d")
@@ -138,12 +141,12 @@ def process_entry(meta: dict, kind: str, out_dir: Path, *,
     payload = {
         "ticker": file_id, "symbol": symbol, "kind": kind,
         "name_ko": meta["name_ko"], "name_en": meta["name_en"], "theme": meta["theme"],
-        "ma_period": MA_PERIOD, "ma_periods": [MA_SHORT, MA_MID, MA_PERIOD],
+        "ma_period": ma_period, "ma_periods": [MA_SHORT, MA_MID, ma_period],
         "slope_lookback": MA_SLOPE_LOOKBACK, "market": market,
         "series": [
             {"date": idx.strftime("%Y-%m-%d"), "price": float(row["price"]),
              "ma10": float(row["ma10"]), "ma20": float(row["ma20"]),
-             "ma100": float(row["ma100"]), "disparity": float(row["disparity"])}
+             "ma": float(row["ma"]), "disparity": float(row["disparity"])}
             for idx, row in tail.iterrows()
         ],
     }
@@ -157,7 +160,7 @@ def process_entry(meta: dict, kind: str, out_dir: Path, *,
         "ticker": file_id, "symbol": symbol, "kind": kind,
         "name_ko": meta["name_ko"], "name_en": meta["name_en"], "theme": meta["theme"],
         "price": float(last["price"]), "ma10": float(last["ma10"]),
-        "ma20": float(last["ma20"]), "ma100": float(last["ma100"]),
+        "ma20": float(last["ma20"]), "ma": float(last["ma"]),
         "disparity": disparity, "zone": classify_zone(disparity),
         "market": market, "as_of_date": as_of_date,
     }
@@ -170,24 +173,27 @@ def run_market(cfg: dict, sectors: list, indices: list) -> tuple:
     한 시장 실패가 다른 시장을 죽이지 않도록 sys.exit 대신 값을 반환한다.
     """
     out_dir = cfg["out_dir"]
+    ma_period = cfg["ma_period"]
     out_dir.mkdir(parents=True, exist_ok=True)
     now = datetime.now(KST)
     summary_sectors, summary_indices, errors = [], [], []
 
-    print(f"  [{cfg['market_id']}] 지수 수집…")
+    print(f"  [{cfg['market_id']}] 지수 수집… (MA{ma_period})")
     for meta in indices:
         try:
             summary_indices.append(process_entry(meta, "index", out_dir,
-                                                  auto_adjust=cfg["auto_adjust"], positive_only=cfg["positive_only"]))
+                                                  auto_adjust=cfg["auto_adjust"], positive_only=cfg["positive_only"],
+                                                  ma_period=ma_period))
         except Exception as e:  # noqa: BLE001
             errors.append(meta["ticker"])
             print(f"    [FAIL] {meta['ticker']}: {e}", file=sys.stderr)
 
-    print(f"  [{cfg['market_id']}] 섹터 수집…")
+    print(f"  [{cfg['market_id']}] 섹터 수집… (MA{ma_period})")
     for meta in sectors:
         try:
             summary_sectors.append(process_entry(meta, "sector", out_dir,
-                                                 auto_adjust=cfg["auto_adjust"], positive_only=cfg["positive_only"]))
+                                                 auto_adjust=cfg["auto_adjust"], positive_only=cfg["positive_only"],
+                                                 ma_period=ma_period))
         except Exception as e:  # noqa: BLE001
             errors.append(meta["ticker"])
             print(f"    [FAIL] {meta['ticker']}: {e}", file=sys.stderr)
@@ -207,7 +213,7 @@ def run_market(cfg: dict, sectors: list, indices: list) -> tuple:
         "labels": cfg["labels"],
         "updated_at": now.isoformat(timespec="seconds"),
         "as_of_date": as_of,
-        "ma_period": MA_PERIOD, "ma_periods": [MA_SHORT, MA_MID, MA_PERIOD],
+        "ma_period": ma_period, "ma_periods": [MA_SHORT, MA_MID, ma_period],
         "slope_lookback": MA_SLOPE_LOOKBACK,
         "zones": {
             "cooldown_max": ZONE_COOLDOWN_MAX, "normal_max": ZONE_NORMAL_MAX, "warning_max": ZONE_WARNING_MAX,
