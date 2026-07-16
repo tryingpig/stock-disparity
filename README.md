@@ -3,7 +3,7 @@
 미국 SPDR 11개 섹터 + 코스피·코스닥/한국 섹터 ETF의 **100일 이격도**를 매일 자동 추적하고,
 **한 페이지에서 상단 메뉴로 미국(US)/한국(KR)을 전환**해 보는 정적 대시보드입니다.
 
-🔗 https://tryingpig.github.io/stock-disparity/  (마지막 본 시장 기억, 첫 방문은 미국)
+🔗 https://tryingpig.github.io/stock-disparity/  (마지막 본 시장 기억, 첫 방문은 한국)
 
 ## 이격도
 

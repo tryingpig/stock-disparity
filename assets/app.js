@@ -22,8 +22,8 @@ const MARKET_META = {
 // 시장(us|kr) 해석: ?market= 쿼리 → localStorage → 기본 us. 화이트리스트로 방어.
 function resolveMarket() {
   const q = new URLSearchParams(location.search).get("market");
-  let m = (q || localStorage.getItem("market") || "us").toLowerCase();
-  m = m === "kr" ? "kr" : "us";
+  let m = (q || localStorage.getItem("market") || "kr").toLowerCase();
+  m = m === "us" ? "us" : "kr";
   localStorage.setItem("market", m);
   return m;
 }
@@ -42,7 +42,7 @@ function renderMarketMenu() {
   if (!el) return;
   const btn = (id, label) =>
     `<button class="${id === MARKET ? "active" : ""}" onclick="location.href='index.html?market=${id}'">${label}</button>`;
-  el.innerHTML = btn("us", "미국 US") + btn("kr", "한국 KR");
+  el.innerHTML = btn("kr", "한국 KR") + btn("us", "미국 US");
 }
 
 function fmtNum(v, digits = 2) {
