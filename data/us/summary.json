@@ -9,7 +9,7 @@
     "subtitle": "미국 주요 지수 + GICS 11개 섹터 SPDR ETF · 100일 이격도 기반 (이그전 해석법)",
     "index_heading": "미국 주요 지수"
   },
-  "updated_at": "2026-07-18T05:16:46+09:00",
+  "updated_at": "2026-07-18T08:12:57+09:00",
   "as_of_date": "2026-07-17",
   "ma_period": 100,
   "ma_periods": [
@@ -164,11 +164,11 @@
       "name_ko": "정보기술",
       "name_en": "Technology Select Sector SPDR ETF",
       "theme": "AI·반도체·소프트웨어",
-      "price": 175.58,
+      "price": 175.59,
       "ma10": 181.49,
       "ma20": 183.66,
       "ma": 163.31,
-      "disparity": 107.51,
+      "disparity": 107.52,
       "zone": "normal",
       "market": {
         "state": "bear",
@@ -353,11 +353,11 @@
       "name_ko": "유틸리티",
       "name_en": "Utilities Select Sector SPDR ETF",
       "theme": "전력수요·배당·금리",
-      "price": 45.16,
+      "price": 45.17,
       "ma10": 45.42,
       "ma20": 45.4,
       "ma": 45.31,
-      "disparity": 99.67,
+      "disparity": 99.69,
       "zone": "cooldown",
       "market": {
         "state": "sideways",
