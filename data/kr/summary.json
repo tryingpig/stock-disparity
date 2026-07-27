@@ -9,7 +9,7 @@
     "subtitle": "코스피·코스닥 + 한국 섹터 ETF · 50일 이격도 기반 (이그전 해석법)",
     "index_heading": "한국 주요 지수 (코스피·코스닥)"
   },
-  "updated_at": "2026-07-28T03:15:37+09:00",
+  "updated_at": "2026-07-28T04:58:40+09:00",
   "as_of_date": "2026-07-27",
   "ma_period": 50,
   "ma_periods": [
@@ -31,11 +31,11 @@
       "name_ko": "코스피",
       "name_en": "KOSPI Composite Index",
       "theme": "한국 종합주가지수",
-      "price": 6690.62,
-      "ma10": 6909.41,
-      "ma20": 7433.13,
-      "ma": 7902.83,
-      "disparity": 84.66,
+      "price": 7096.89,
+      "ma10": 6969.54,
+      "ma20": 7545.12,
+      "ma": 7921.88,
+      "disparity": 89.59,
       "zone": "cooldown",
       "market": {
         "state": "bear",
@@ -44,11 +44,11 @@
         "cross": false,
         "up10": false,
         "up20": false,
-        "spread_pct": -7.05,
-        "slope10_pct": -6.1,
-        "slope20_pct": -6.26
+        "spread_pct": -7.63,
+        "slope10_pct": -6.33,
+        "slope20_pct": -6.17
       },
-      "as_of_date": "2026-07-24"
+      "as_of_date": "2026-07-23"
     },
     {
       "ticker": "KQ11",
