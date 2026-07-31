@@ -19,9 +19,9 @@
     "cross": false,
     "up10": false,
     "up20": false,
-    "spread_pct": -6.76,
-    "slope10_pct": -7.0,
-    "slope20_pct": -7.28
+    "spread_pct": -6.59,
+    "slope10_pct": -6.68,
+    "slope20_pct": -7.13
   },
   "series": [
     {
@@ -10418,11 +10418,11 @@
     },
     {
       "date": "2026-07-31",
-      "price": 6373.96,
-      "ma10": 6425.96,
-      "ma20": 6891.95,
-      "ma": 7748.9,
-      "disparity": 82.26
+      "price": 6593.26,
+      "ma10": 6447.89,
+      "ma20": 6902.91,
+      "ma": 7753.29,
+      "disparity": 85.04
     }
   ]
 }
