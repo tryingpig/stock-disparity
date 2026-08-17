@@ -9,7 +9,7 @@
     "subtitle": "미국 주요 지수 + GICS 11개 섹터 SPDR ETF · 100일 이격도 기반 (이그전 해석법)",
     "index_heading": "미국 주요 지수"
   },
-  "updated_at": "2026-08-18T06:31:49+09:00",
+  "updated_at": "2026-08-18T06:55:51+09:00",
   "as_of_date": "2026-08-17",
   "ma_period": 100,
   "ma_periods": [
@@ -381,21 +381,21 @@
       "name_en": "Communication Services Select Sector SPDR ETF",
       "theme": "광고·미디어·플랫폼",
       "price": 110.82,
-      "ma10": 111.51,
-      "ma20": 109.92,
+      "ma10": 111.5,
+      "ma20": 109.95,
       "ma": 112.35,
       "disparity": 98.64,
       "zone": "cooldown",
       "market": {
         "state": "sideways",
         "label": "횡보장",
-        "score": 43.3,
+        "score": 38.9,
         "cross": true,
         "up10": true,
         "up20": false,
-        "spread_pct": 1.45,
-        "slope10_pct": 1.53,
-        "slope20_pct": -0.06
+        "spread_pct": 1.41,
+        "slope10_pct": 1.13,
+        "slope20_pct": -0.05
       },
       "as_of_date": "2026-08-17",
       "rank": 10
