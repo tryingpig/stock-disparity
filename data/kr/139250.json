@@ -15,13 +15,13 @@
   "market": {
     "state": "bull",
     "label": "상승장",
-    "score": 98.9,
+    "score": 99.3,
     "cross": true,
     "up10": true,
     "up20": true,
-    "spread_pct": 3.3,
-    "slope10_pct": 7.65,
-    "slope20_pct": 1.93
+    "spread_pct": 3.33,
+    "slope10_pct": 7.71,
+    "slope20_pct": 1.95
   },
   "series": [
     {
@@ -10418,11 +10418,11 @@
     },
     {
       "date": "2026-08-19",
-      "price": 17640.0,
-      "ma10": 17368.0,
-      "ma20": 16812.75,
-      "ma": 17498.1,
-      "disparity": 100.81
+      "price": 17730.0,
+      "ma10": 17377.0,
+      "ma20": 16817.25,
+      "ma": 17499.9,
+      "disparity": 101.31
     }
   ]
 }
