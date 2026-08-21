@@ -9,7 +9,7 @@
     "subtitle": "미국 주요 지수 + GICS 11개 섹터 SPDR ETF · 100일 이격도 기반 (이그전 해석법)",
     "index_heading": "미국 주요 지수"
   },
-  "updated_at": "2026-08-21T14:08:51+09:00",
+  "updated_at": "2026-08-21T16:43:55+09:00",
   "as_of_date": "2026-08-20",
   "ma_period": 100,
   "ma_periods": [
@@ -246,21 +246,21 @@
       "name_en": "Real Estate Select Sector SPDR ETF",
       "theme": "금리·REITs·배당",
       "price": 45.08,
-      "ma10": 44.86,
-      "ma20": 45.16,
-      "ma": 43.99,
-      "disparity": 102.48,
+      "ma10": 44.79,
+      "ma20": 45.11,
+      "ma": 44.04,
+      "disparity": 102.36,
       "zone": "cooldown",
       "market": {
         "state": "bear",
         "label": "하락장",
-        "score": -18.1,
+        "score": -17.2,
         "cross": false,
         "up10": false,
         "up20": false,
-        "spread_pct": -0.66,
-        "slope10_pct": -0.24,
-        "slope20_pct": -0.15
+        "spread_pct": -0.71,
+        "slope10_pct": -0.13,
+        "slope20_pct": -0.11
       },
       "as_of_date": "2026-08-20",
       "rank": 5
@@ -381,21 +381,21 @@
       "name_en": "Communication Services Select Sector SPDR ETF",
       "theme": "광고·미디어·플랫폼",
       "price": 110.68,
-      "ma10": 111.33,
-      "ma20": 110.05,
-      "ma": 112.37,
-      "disparity": 98.5,
+      "ma10": 111.34,
+      "ma20": 110.34,
+      "ma": 112.41,
+      "disparity": 98.46,
       "zone": "cooldown",
       "market": {
         "state": "bull",
         "label": "상승장",
-        "score": 31.7,
+        "score": 27.4,
         "cross": true,
         "up10": true,
         "up20": true,
-        "spread_pct": 1.16,
-        "slope10_pct": 0.64,
-        "slope20_pct": 0.14
+        "spread_pct": 0.91,
+        "slope10_pct": 0.23,
+        "slope20_pct": 0.46
       },
       "as_of_date": "2026-08-20",
       "rank": 10
