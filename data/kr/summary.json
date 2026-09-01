@@ -9,7 +9,7 @@
     "subtitle": "코스피·코스닥 + 한국 섹터 ETF · 50일 이격도 기반 (이그전 해석법)",
     "index_heading": "한국 주요 지수 (코스피·코스닥)"
   },
-  "updated_at": "2026-09-02T07:28:30+09:00",
+  "updated_at": "2026-09-02T08:52:44+09:00",
   "as_of_date": "2026-09-01",
   "ma_period": 50,
   "ma_periods": [
@@ -32,21 +32,21 @@
       "name_en": "KOSPI Composite Index",
       "theme": "한국 종합주가지수",
       "price": 6820.02,
-      "ma10": 6806.48,
-      "ma20": 6623.38,
-      "ma": 7160.05,
-      "disparity": 95.25,
+      "ma10": 6787.57,
+      "ma20": 6633.05,
+      "ma": 7114.55,
+      "disparity": 95.86,
       "zone": "cooldown",
       "market": {
         "state": "bull",
         "label": "상승장",
-        "score": 95.4,
+        "score": 85.8,
         "cross": true,
         "up10": true,
         "up20": true,
-        "spread_pct": 2.76,
-        "slope10_pct": 2.54,
-        "slope20_pct": 2.52
+        "spread_pct": 2.33,
+        "slope10_pct": 1.58,
+        "slope20_pct": 2.66
       },
       "as_of_date": "2026-08-31"
     },
@@ -58,21 +58,21 @@
       "name_en": "KOSDAQ Composite Index",
       "theme": "코스닥 종합지수",
       "price": 834.29,
-      "ma10": 830.54,
-      "ma20": 818.8,
-      "ma": 824.46,
-      "disparity": 101.19,
+      "ma10": 827.92,
+      "ma20": 824.73,
+      "ma": 821.21,
+      "disparity": 101.59,
       "zone": "cooldown",
       "market": {
         "state": "sideways",
         "label": "횡보장",
-        "score": 47.7,
+        "score": 21.9,
         "cross": true,
         "up10": false,
         "up20": true,
-        "spread_pct": 1.43,
-        "slope10_pct": -1.1,
-        "slope20_pct": 3.89
+        "spread_pct": 0.39,
+        "slope10_pct": -1.58,
+        "slope20_pct": 4.21
       },
       "as_of_date": "2026-08-31"
     }
