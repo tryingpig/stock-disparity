@@ -9,7 +9,7 @@
     "subtitle": "코스피·코스닥 + 한국 섹터 ETF · 50일 이격도 기반 (이그전 해석법)",
     "index_heading": "한국 주요 지수 (코스피·코스닥)"
   },
-  "updated_at": "2026-09-03T07:20:32+09:00",
+  "updated_at": "2026-09-03T08:54:55+09:00",
   "as_of_date": "2026-09-02",
   "ma_period": 50,
   "ma_periods": [
@@ -58,21 +58,21 @@
       "name_en": "KOSDAQ Composite Index",
       "theme": "코스닥 종합지수",
       "price": 821.25,
-      "ma10": 826.2,
-      "ma20": 823.87,
-      "ma": 820.87,
-      "disparity": 100.05,
+      "ma10": 826.62,
+      "ma20": 828.92,
+      "ma": 818.31,
+      "disparity": 100.36,
       "zone": "cooldown",
       "market": {
         "state": "sideways",
         "label": "횡보장",
-        "score": 17.8,
-        "cross": true,
+        "score": 10.3,
+        "cross": false,
         "up10": false,
         "up20": true,
-        "spread_pct": 0.28,
-        "slope10_pct": -1.78,
-        "slope20_pct": 4.1
+        "spread_pct": -0.28,
+        "slope10_pct": -1.41,
+        "slope20_pct": 4.33
       },
       "as_of_date": "2026-09-01"
     }
