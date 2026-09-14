@@ -15,15 +15,23 @@
   "market": {
     "state": "bear",
     "label": "하락장",
-    "score": -39.0,
+    "score": -27.6,
     "cross": false,
     "up10": false,
     "up20": false,
-    "spread_pct": -0.74,
-    "slope10_pct": -0.7,
-    "slope20_pct": -1.15
+    "spread_pct": -0.75,
+    "slope10_pct": -0.26,
+    "slope20_pct": -0.66
   },
   "series": [
+    {
+      "date": "2021-05-21",
+      "price": 965.63,
+      "ma10": 970.37,
+      "ma20": 983.93,
+      "ma": 976.49,
+      "disparity": 98.89
+    },
     {
       "date": "2021-05-24",
       "price": 948.37,
@@ -10415,14 +10423,6 @@
       "ma20": 824.74,
       "ma": 803.41,
       "disparity": 102.14
-    },
-    {
-      "date": "2026-09-14",
-      "price": 806.79,
-      "ma10": 815.77,
-      "ma20": 821.85,
-      "ma": 802.21,
-      "disparity": 100.57
     }
   ]
 }
