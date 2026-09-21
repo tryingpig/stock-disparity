@@ -15,7 +15,7 @@
   "market": {
     "state": "sideways",
     "label": "횡보장",
-    "score": 2.5,
+    "score": 2.4,
     "cross": true,
     "up10": true,
     "up20": false,
@@ -3354,11 +3354,11 @@
     },
     {
       "date": "2026-09-21",
-      "price": 21590.0,
-      "ma10": 22031.0,
-      "ma20": 21964.75,
-      "ma": 22133.5,
-      "disparity": 97.54
+      "price": 21580.0,
+      "ma10": 22030.0,
+      "ma20": 21964.25,
+      "ma": 22133.3,
+      "disparity": 97.5
     }
   ]
 }
