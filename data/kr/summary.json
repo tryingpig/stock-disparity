@@ -9,7 +9,7 @@
     "subtitle": "코스피·코스닥 + 한국 섹터 ETF · 50일 이격도 기반 (이그전 해석법)",
     "index_heading": "한국 주요 지수 (코스피·코스닥)"
   },
-  "updated_at": "2026-09-22T21:26:07+09:00",
+  "updated_at": "2026-09-23T02:30:52+09:00",
   "as_of_date": "2026-09-22",
   "ma_period": 50,
   "ma_periods": [
@@ -31,24 +31,24 @@
       "name_ko": "코스피",
       "name_en": "KOSPI Composite Index",
       "theme": "한국 종합주가지수",
-      "price": 7017.91,
-      "ma10": 6866.03,
-      "ma20": 6830.25,
-      "ma": 6683.73,
-      "disparity": 105.0,
-      "zone": "normal",
+      "price": 7007.72,
+      "ma10": 6859.7,
+      "ma20": 6816.49,
+      "ma": 6692.89,
+      "disparity": 104.7,
+      "zone": "cooldown",
       "market": {
         "state": "bull",
         "label": "상승장",
-        "score": 26.4,
+        "score": 18.9,
         "cross": true,
         "up10": true,
         "up20": true,
-        "spread_pct": 0.52,
-        "slope10_pct": 0.84,
-        "slope20_pct": 0.5
+        "spread_pct": 0.63,
+        "slope10_pct": 0.44,
+        "slope20_pct": 0.12
       },
-      "as_of_date": "2026-09-22"
+      "as_of_date": "2026-09-21"
     },
     {
       "ticker": "KQ11",
@@ -57,24 +57,24 @@
       "name_ko": "코스닥",
       "name_en": "KOSDAQ Composite Index",
       "theme": "코스닥 종합지수",
-      "price": 834.38,
-      "ma10": 824.31,
-      "ma20": 822.16,
-      "ma": 801.92,
-      "disparity": 104.05,
+      "price": 836.27,
+      "ma10": 822.06,
+      "ma20": 821.8,
+      "ma": 801.98,
+      "disparity": 104.28,
       "zone": "cooldown",
       "market": {
-        "state": "bull",
-        "label": "상승장",
-        "score": 19.3,
+        "state": "sideways",
+        "label": "횡보장",
+        "score": 8.3,
         "cross": true,
         "up10": true,
-        "up20": true,
-        "spread_pct": 0.26,
-        "slope10_pct": 1.16,
-        "slope20_pct": 0.17
+        "up20": false,
+        "spread_pct": 0.03,
+        "slope10_pct": 0.77,
+        "slope20_pct": -0.01
       },
-      "as_of_date": "2026-09-22"
+      "as_of_date": "2026-09-21"
     }
   ],
   "sectors": [
