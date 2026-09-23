@@ -9,7 +9,7 @@
     "subtitle": "미국 주요 지수 + GICS 11개 섹터 SPDR ETF · 100일 이격도 기반 (이그전 해석법)",
     "index_heading": "미국 주요 지수"
   },
-  "updated_at": "2026-09-23T09:08:06+09:00",
+  "updated_at": "2026-09-23T12:38:33+09:00",
   "as_of_date": "2026-09-22",
   "ma_period": 100,
   "ma_periods": [
@@ -83,7 +83,7 @@
       "name_ko": "다우존스",
       "name_en": "Dow Jones Industrial Average",
       "theme": "대형 우량주 30",
-      "price": 51863.69,
+      "price": 51863.7,
       "ma10": 52036.75,
       "ma20": 52671.97,
       "ma": 51913.89,
