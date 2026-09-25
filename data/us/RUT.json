@@ -15,7 +15,7 @@
   "market": {
     "state": "bear",
     "label": "하락장",
-    "score": -68.7,
+    "score": -68.8,
     "cross": false,
     "up10": false,
     "up20": false,
@@ -10419,7 +10419,7 @@
     {
       "date": "2026-09-24",
       "price": 2835.57,
-      "ma10": 2870.09,
+      "ma10": 2870.08,
       "ma20": 2917.43,
       "ma": 2937.1,
       "disparity": 96.54
