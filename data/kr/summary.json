@@ -9,7 +9,7 @@
     "subtitle": "코스피·코스닥 + 한국 섹터 ETF · 50일 이격도 기반 (이그전 해석법)",
     "index_heading": "한국 주요 지수 (코스피·코스닥)"
   },
-  "updated_at": "2026-09-29T22:50:19+09:00",
+  "updated_at": "2026-09-30T03:27:11+09:00",
   "as_of_date": "2026-09-29",
   "ma_period": 50,
   "ma_periods": [
@@ -31,24 +31,24 @@
       "name_ko": "코스피",
       "name_en": "KOSPI Composite Index",
       "theme": "한국 종합주가지수",
-      "price": 6870.81,
-      "ma10": 6850.63,
-      "ma20": 6846.85,
-      "ma": 6681.59,
-      "disparity": 102.83,
+      "price": 6889.74,
+      "ma10": 6854.54,
+      "ma20": 6842.75,
+      "ma": 6689.87,
+      "disparity": 102.99,
       "zone": "cooldown",
       "market": {
-        "state": "sideways",
-        "label": "횡보장",
-        "score": 10.1,
+        "state": "bull",
+        "label": "상승장",
+        "score": 14.9,
         "cross": true,
-        "up10": false,
+        "up10": true,
         "up20": true,
-        "spread_pct": 0.06,
-        "slope10_pct": -0.11,
-        "slope20_pct": 0.67
+        "spread_pct": 0.17,
+        "slope10_pct": 0.25,
+        "slope20_pct": 0.6
       },
-      "as_of_date": "2026-09-29"
+      "as_of_date": "2026-09-28"
     },
     {
       "ticker": "KQ11",
@@ -57,24 +57,24 @@
       "name_ko": "코스닥",
       "name_en": "KOSDAQ Composite Index",
       "theme": "코스닥 종합지수",
-      "price": 849.8,
-      "ma10": 829.6,
-      "ma20": 824.06,
-      "ma": 804.48,
-      "disparity": 105.63,
+      "price": 846.58,
+      "ma10": 826.68,
+      "ma20": 823.49,
+      "ma": 804.07,
+      "disparity": 105.29,
       "zone": "normal",
       "market": {
         "state": "bull",
         "label": "상승장",
-        "score": 30.6,
+        "score": 24.3,
         "cross": true,
         "up10": true,
         "up20": true,
-        "spread_pct": 0.67,
-        "slope10_pct": 1.09,
-        "slope20_pct": 0.41
+        "spread_pct": 0.39,
+        "slope10_pct": 0.9,
+        "slope20_pct": 0.5
       },
-      "as_of_date": "2026-09-29"
+      "as_of_date": "2026-09-28"
     }
   ],
   "sectors": [
