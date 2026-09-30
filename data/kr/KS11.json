@@ -13,25 +13,17 @@
   ],
   "slope_lookback": 5,
   "market": {
-    "state": "bull",
-    "label": "상승장",
-    "score": 14.9,
+    "state": "sideways",
+    "label": "횡보장",
+    "score": 12.1,
     "cross": true,
-    "up10": true,
+    "up10": false,
     "up20": true,
-    "spread_pct": 0.17,
-    "slope10_pct": 0.25,
-    "slope20_pct": 0.6
+    "spread_pct": 0.09,
+    "slope10_pct": -0.04,
+    "slope20_pct": 0.71
   },
   "series": [
-    {
-      "date": "2021-06-03",
-      "price": 3247.43,
-      "ma10": 3189.22,
-      "ma20": 3180.77,
-      "ma": 3154.6,
-      "disparity": 102.94
-    },
     {
       "date": "2021-06-04",
       "price": 3240.08,
@@ -10423,6 +10415,14 @@
       "ma20": 6842.75,
       "ma": 6689.87,
       "disparity": 102.99
+    },
+    {
+      "date": "2026-09-30",
+      "price": 6920.52,
+      "ma10": 6855.61,
+      "ma20": 6849.33,
+      "ma": 6682.59,
+      "disparity": 103.56
     }
   ]
 }
