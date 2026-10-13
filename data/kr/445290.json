@@ -13,15 +13,15 @@
   ],
   "slope_lookback": 5,
   "market": {
-    "state": "sideways",
-    "label": "횡보장",
-    "score": -0.3,
+    "state": "bear",
+    "label": "하락장",
+    "score": -50.2,
     "cross": false,
     "up10": false,
-    "up20": true,
-    "spread_pct": -0.22,
-    "slope10_pct": -0.03,
-    "slope20_pct": 0.3
+    "up20": false,
+    "spread_pct": -0.91,
+    "slope10_pct": -1.93,
+    "slope20_pct": -0.84
   },
   "series": [
     {
@@ -7095,6 +7095,14 @@
       "ma20": 30718.5,
       "ma": 30510.4,
       "disparity": 92.26
+    },
+    {
+      "date": "2026-10-13",
+      "price": 26575.0,
+      "ma10": 30208.0,
+      "ma20": 30486.25,
+      "ma": 30511.9,
+      "disparity": 87.1
     }
   ]
 }
