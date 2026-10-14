@@ -15,12 +15,12 @@
   "market": {
     "state": "sideways",
     "label": "횡보장",
-    "score": 47.7,
+    "score": 48.4,
     "cross": true,
     "up10": true,
     "up20": false,
-    "spread_pct": 1.11,
-    "slope10_pct": 2.58,
+    "spread_pct": 1.14,
+    "slope10_pct": 2.61,
     "slope20_pct": -0.02
   },
   "series": [
@@ -10418,11 +10418,11 @@
     },
     {
       "date": "2026-10-14",
-      "price": 41.63,
-      "ma10": 40.94,
+      "price": 41.72,
+      "ma10": 40.95,
       "ma20": 40.49,
       "ma": 43.21,
-      "disparity": 96.36
+      "disparity": 96.55
     }
   ]
 }
