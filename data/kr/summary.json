@@ -9,7 +9,7 @@
     "subtitle": "코스피·코스닥 + 한국 섹터 ETF · 50일 이격도 기반 (이그전 해석법)",
     "index_heading": "한국 주요 지수 (코스피·코스닥)"
   },
-  "updated_at": "2026-10-20T21:34:59+09:00",
+  "updated_at": "2026-10-21T02:45:56+09:00",
   "as_of_date": "2026-10-20",
   "ma_period": 50,
   "ma_periods": [
@@ -31,11 +31,11 @@
       "name_ko": "코스피",
       "name_en": "KOSPI Composite Index",
       "theme": "한국 종합주가지수",
-      "price": 5552.74,
-      "ma10": 6134.26,
-      "ma20": 6531.63,
-      "ma": 6646.35,
-      "disparity": 83.55,
+      "price": 5768.01,
+      "ma10": 6279.36,
+      "ma20": 6589.89,
+      "ma": 6662.47,
+      "disparity": 86.57,
       "zone": "cooldown",
       "market": {
         "state": "bear",
@@ -44,11 +44,11 @@
         "cross": false,
         "up10": false,
         "up20": false,
-        "spread_pct": -6.08,
-        "slope10_pct": -8.94,
-        "slope20_pct": -3.98
+        "spread_pct": -4.71,
+        "slope10_pct": -8.21,
+        "slope20_pct": -3.85
       },
-      "as_of_date": "2026-10-20"
+      "as_of_date": "2026-10-19"
     },
     {
       "ticker": "KQ11",
@@ -57,24 +57,24 @@
       "name_ko": "코스닥",
       "name_en": "KOSDAQ Composite Index",
       "theme": "코스닥 종합지수",
-      "price": 781.97,
-      "ma10": 836.72,
-      "ma20": 843.57,
-      "ma": 832.68,
-      "disparity": 93.91,
+      "price": 808.89,
+      "ma10": 847.85,
+      "ma20": 845.27,
+      "ma": 832.66,
+      "disparity": 97.15,
       "zone": "cooldown",
       "market": {
-        "state": "bear",
-        "label": "하락장",
-        "score": -57.0,
-        "cross": false,
+        "state": "sideways",
+        "label": "횡보장",
+        "score": -31.1,
+        "cross": true,
         "up10": false,
         "up20": false,
-        "spread_pct": -0.81,
-        "slope10_pct": -4.23,
-        "slope20_pct": -0.72
+        "spread_pct": 0.31,
+        "slope10_pct": -3.04,
+        "slope20_pct": -0.48
       },
-      "as_of_date": "2026-10-20"
+      "as_of_date": "2026-10-19"
     }
   ],
   "sectors": [
