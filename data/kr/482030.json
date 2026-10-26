@@ -15,13 +15,13 @@
   "market": {
     "state": "bear",
     "label": "하락장",
-    "score": -94.1,
+    "score": -95.0,
     "cross": false,
     "up10": false,
     "up20": false,
-    "spread_pct": -5.46,
-    "slope10_pct": -8.92,
-    "slope20_pct": -1.6
+    "spread_pct": -5.53,
+    "slope10_pct": -9.05,
+    "slope20_pct": -1.67
   },
   "series": [
     {
@@ -4354,11 +4354,11 @@
     },
     {
       "date": "2026-10-26",
-      "price": 7880.0,
-      "ma10": 8782.5,
-      "ma20": 9290.0,
-      "ma": 9126.0,
-      "disparity": 86.35
+      "price": 7760.0,
+      "ma10": 8770.5,
+      "ma20": 9284.0,
+      "ma": 9123.6,
+      "disparity": 85.05
     }
   ]
 }
