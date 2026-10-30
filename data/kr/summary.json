@@ -9,7 +9,7 @@
     "subtitle": "코스피·코스닥 + 한국 섹터 ETF · 50일 이격도 기반 (이그전 해석법)",
     "index_heading": "한국 주요 지수 (코스피·코스닥)"
   },
-  "updated_at": "2026-10-30T22:53:34+09:00",
+  "updated_at": "2026-10-31T03:24:38+09:00",
   "as_of_date": "2026-10-30",
   "ma_period": 50,
   "ma_periods": [
@@ -31,37 +31,11 @@
       "name_ko": "코스피",
       "name_en": "KOSPI Composite Index",
       "theme": "한국 종합주가지수",
-      "price": 5730.74,
-      "ma10": 5692.91,
-      "ma20": 6046.31,
-      "ma": 6515.14,
-      "disparity": 87.96,
-      "zone": "cooldown",
-      "market": {
-        "state": "bear",
-        "label": "하락장",
-        "score": -84.9,
-        "cross": false,
-        "up10": false,
-        "up20": false,
-        "spread_pct": -5.84,
-        "slope10_pct": -1.49,
-        "slope20_pct": -4.66
-      },
-      "as_of_date": "2026-10-30"
-    },
-    {
-      "ticker": "KQ11",
-      "symbol": "^KQ11",
-      "kind": "index",
-      "name_ko": "코스닥",
-      "name_en": "KOSDAQ Composite Index",
-      "theme": "코스닥 종합지수",
-      "price": 724.38,
-      "ma10": 761.93,
-      "ma20": 809.16,
-      "ma": 819.31,
-      "disparity": 88.41,
+      "price": 5937.66,
+      "ma10": 5686.64,
+      "ma20": 6101.67,
+      "ma": 6540.08,
+      "disparity": 90.79,
       "zone": "cooldown",
       "market": {
         "state": "bear",
@@ -70,11 +44,37 @@
         "cross": false,
         "up10": false,
         "up20": false,
-        "spread_pct": -5.84,
-        "slope10_pct": -4.34,
-        "slope20_pct": -3.06
+        "spread_pct": -6.8,
+        "slope10_pct": -3.4,
+        "slope20_pct": -4.88
       },
-      "as_of_date": "2026-10-30"
+      "as_of_date": "2026-10-29"
+    },
+    {
+      "ticker": "KQ11",
+      "symbol": "^KQ11",
+      "kind": "index",
+      "name_ko": "코스닥",
+      "name_en": "KOSDAQ Composite Index",
+      "theme": "코스닥 종합지수",
+      "price": 753.23,
+      "ma10": 768.97,
+      "ma20": 815.74,
+      "ma": 822.11,
+      "disparity": 91.62,
+      "zone": "cooldown",
+      "market": {
+        "state": "bear",
+        "label": "하락장",
+        "score": -100.0,
+        "cross": false,
+        "up10": false,
+        "up20": false,
+        "spread_pct": -5.73,
+        "slope10_pct": -5.13,
+        "slope20_pct": -2.77
+      },
+      "as_of_date": "2026-10-29"
     }
   ],
   "sectors": [
