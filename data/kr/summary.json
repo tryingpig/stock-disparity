@@ -9,7 +9,7 @@
     "subtitle": "코스피·코스닥 + 한국 섹터 ETF · 50일 이격도 기반 (이그전 해석법)",
     "index_heading": "한국 주요 지수 (코스피·코스닥)"
   },
-  "updated_at": "2026-11-06T23:49:49+09:00",
+  "updated_at": "2026-11-07T04:50:52+09:00",
   "as_of_date": "2026-11-06",
   "ma_period": 50,
   "ma_periods": [
@@ -31,24 +31,24 @@
       "name_ko": "코스피",
       "name_en": "KOSPI Composite Index",
       "theme": "한국 종합주가지수",
-      "price": 5059.69,
-      "ma10": 5642.38,
-      "ma20": 5710.75,
-      "ma": 6391.77,
-      "disparity": 79.16,
+      "price": 5383.8,
+      "ma10": 5691.44,
+      "ma20": 5789.06,
+      "ma": 6424.51,
+      "disparity": 83.8,
       "zone": "cooldown",
       "market": {
-        "state": "bear",
-        "label": "하락장",
-        "score": -62.8,
+        "state": "sideways",
+        "label": "횡보장",
+        "score": -62.9,
         "cross": false,
-        "up10": false,
+        "up10": true,
         "up20": false,
-        "spread_pct": -1.2,
-        "slope10_pct": -0.89,
-        "slope20_pct": -5.55
+        "spread_pct": -1.69,
+        "slope10_pct": 0.08,
+        "slope20_pct": -5.12
       },
-      "as_of_date": "2026-11-06"
+      "as_of_date": "2026-11-05"
     },
     {
       "ticker": "KQ11",
@@ -57,11 +57,11 @@
       "name_ko": "코스닥",
       "name_en": "KOSDAQ Composite Index",
       "theme": "코스닥 종합지수",
-      "price": 644.27,
-      "ma10": 719.63,
-      "ma20": 758.07,
-      "ma": 806.54,
-      "disparity": 79.88,
+      "price": 678.41,
+      "ma10": 730.37,
+      "ma20": 770.47,
+      "ma": 809.92,
+      "disparity": 83.76,
       "zone": "cooldown",
       "market": {
         "state": "bear",
@@ -70,11 +70,11 @@
         "cross": false,
         "up10": false,
         "up20": false,
-        "spread_pct": -5.07,
-        "slope10_pct": -5.55,
-        "slope20_pct": -6.31
+        "spread_pct": -5.2,
+        "slope10_pct": -5.02,
+        "slope20_pct": -5.55
       },
-      "as_of_date": "2026-11-06"
+      "as_of_date": "2026-11-05"
     }
   ],
   "sectors": [
