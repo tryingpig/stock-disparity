@@ -9,7 +9,7 @@
     "subtitle": "미국 주요 지수 + GICS 11개 섹터 SPDR ETF · 100일 이격도 기반 (이그전 해석법)",
     "index_heading": "미국 주요 지수"
   },
-  "updated_at": "2026-11-11T13:58:36+09:00",
+  "updated_at": "2026-11-11T21:35:30+09:00",
   "as_of_date": "2026-11-10",
   "ma_period": 100,
   "ma_periods": [
@@ -57,7 +57,7 @@
       "name_ko": "나스닥 종합",
       "name_en": "Nasdaq Composite Index",
       "theme": "기술주 중심 종합지수",
-      "price": 25065.88,
+      "price": 25065.87,
       "ma10": 25365.78,
       "ma20": 25868.69,
       "ma": 26182.4,
@@ -113,7 +113,7 @@
       "ma10": 2812.3,
       "ma20": 2789.46,
       "ma": 2912.09,
-      "disparity": 96.88,
+      "disparity": 96.89,
       "zone": "cooldown",
       "market": {
         "state": "bull",
