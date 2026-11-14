@@ -9,7 +9,7 @@
     "subtitle": "미국 주요 지수 + GICS 11개 섹터 SPDR ETF · 100일 이격도 기반 (이그전 해석법)",
     "index_heading": "미국 주요 지수"
   },
-  "updated_at": "2026-11-14T09:55:38+09:00",
+  "updated_at": "2026-11-14T11:01:59+09:00",
   "as_of_date": "2026-11-13",
   "ma_period": 100,
   "ma_periods": [
@@ -299,24 +299,24 @@
       "name_ko": "부동산",
       "name_en": "Real Estate Select Sector SPDR ETF",
       "theme": "금리·REITs·배당",
-      "price": 44.37,
-      "ma10": 44.33,
-      "ma20": 43.4,
+      "price": 44.36,
+      "ma10": 44.21,
+      "ma20": 43.29,
       "ma": 43.5,
-      "disparity": 102.0,
+      "disparity": 101.98,
       "zone": "cooldown",
       "market": {
         "state": "bull",
         "label": "상승장",
-        "score": 83.5,
+        "score": 84.5,
         "cross": true,
         "up10": true,
         "up20": true,
-        "spread_pct": 2.14,
-        "slope10_pct": 2.07,
-        "slope20_pct": 1.52
+        "spread_pct": 2.13,
+        "slope10_pct": 2.13,
+        "slope20_pct": 1.55
       },
-      "as_of_date": "2026-11-13",
+      "as_of_date": "2026-11-12",
       "rank": 7
     },
     {
@@ -353,24 +353,24 @@
       "name_ko": "커뮤니케이션 서비스",
       "name_en": "Communication Services Select Sector SPDR ETF",
       "theme": "광고·미디어·플랫폼",
-      "price": 108.69,
-      "ma10": 105.58,
-      "ma20": 105.48,
-      "ma": 109.7,
-      "disparity": 99.08,
+      "price": 107.56,
+      "ma10": 104.7,
+      "ma20": 105.56,
+      "ma": 109.68,
+      "disparity": 98.07,
       "zone": "cooldown",
       "market": {
         "state": "sideways",
         "label": "횡보장",
-        "score": 17.2,
-        "cross": true,
+        "score": -13.1,
+        "cross": false,
         "up10": true,
         "up20": false,
-        "spread_pct": 0.09,
-        "slope10_pct": 2.75,
-        "slope20_pct": -0.82
+        "spread_pct": -0.81,
+        "slope10_pct": 1.83,
+        "slope20_pct": -1.0
       },
-      "as_of_date": "2026-11-13",
+      "as_of_date": "2026-11-12",
       "rank": 9
     },
     {
