@@ -9,7 +9,7 @@
     "subtitle": "미국 주요 지수 + GICS 11개 섹터 SPDR ETF · 100일 이격도 기반 (이그전 해석법)",
     "index_heading": "미국 주요 지수"
   },
-  "updated_at": "2026-11-18T12:24:15+09:00",
+  "updated_at": "2026-11-18T15:12:45+09:00",
   "as_of_date": "2026-11-17",
   "ma_period": 100,
   "ma_periods": [
@@ -111,7 +111,7 @@
       "theme": "미국 소형주 2000",
       "price": 2701.87,
       "ma10": 2788.38,
-      "ma20": 2797.5,
+      "ma20": 2797.49,
       "ma": 2901.06,
       "disparity": 93.13,
       "zone": "cooldown",
